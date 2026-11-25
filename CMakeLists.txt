@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-project(cutefish-calculator VERSION 1.0 LANGUAGES CXX)
+project(properdesktop-calculator VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(GNUInstallDirs)
 include(CTest)
 
-find_package(CutefishToolkit REQUIRED)
+find_package(ProperDesktopToolkit REQUIRED)
 
 add_library(calculator-engine STATIC
     src/calculator.cpp
@@ -40,7 +40,7 @@ add_library(calculator-ui STATIC
     ${CALCULATOR_EMBEDDED}
 )
 target_include_directories(calculator-ui PUBLIC src src/ui)
-target_link_libraries(calculator-ui PUBLIC calculator-engine Cutefish::Toolkit)
+target_link_libraries(calculator-ui PUBLIC calculator-engine ProperDesktop::Toolkit)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 target_compile_definitions(${PROJECT_NAME} PRIVATE CALCULATOR_VERSION="${PROJECT_VERSION}")
@@ -48,8 +48,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE calculator-ui)
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-cutefish_add_translations(cutefish-calculator SOURCES src DESKTOP_FILES cutefish-calculator.desktop)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/cutefish-calculator.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
+properdesktop_add_translations(properdesktop-calculator SOURCES src DESKTOP_FILES properdesktop-calculator.desktop)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/properdesktop-calculator.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 
 if(BUILD_TESTING)
     add_subdirectory(tests)

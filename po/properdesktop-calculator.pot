@@ -1,8 +1,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: cutefish-calculator\n"
-"Report-Msgid-Bugs-To: https://github.com/cutefishos\n"
+"Project-Id-Version: properdesktop-calculator\n"
+"Report-Msgid-Bugs-To: https://github.com/danjfaulkner\n"
 "POT-Creation-Date: 2026-11-06 21:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/ui/calculatorwindow.cpp cutefish-calculator.desktop
+#: src/ui/calculatorwindow.cpp properdesktop-calculator.desktop
 msgid "Calculator"
 msgstr ""
 
@@ -56,10 +56,10 @@ msgstr ""
 msgid "A simple calculator"
 msgstr ""
 
-#: cutefish-calculator.desktop
+#: properdesktop-calculator.desktop
 msgid "Perform calculations"
 msgstr ""
 
-#: cutefish-calculator.desktop
+#: properdesktop-calculator.desktop
 msgid "Math;Arithmetic;"
 msgstr ""

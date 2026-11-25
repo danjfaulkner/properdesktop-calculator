@@ -8,7 +8,7 @@
 
 #include <gtest/gtest.h>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 static size_t historyCount(TestDriver& driver)
 {

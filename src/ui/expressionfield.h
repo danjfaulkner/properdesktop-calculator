@@ -7,14 +7,14 @@
 
 #include <string>
 
-namespace cutefish::ui {
+namespace properdesktop::ui {
 class Label;
 }
 
 // The expression being typed, in large text against the right margin; its
 // start slides out at the left margin once it is wider than the space
 // between them. Not editable: the keypad and the keyboard change it.
-class ExpressionField : public cutefish::ui::View
+class ExpressionField : public properdesktop::ui::View
 {
 public:
     static constexpr double FontSize = 20;
@@ -24,13 +24,13 @@ public:
     const std::string& text() const;
     void setText(const std::string& text);
 
-    cutefish::ui::Label* label() const { return m_label; }
+    properdesktop::ui::Label* label() const { return m_label; }
 
 protected:
     void layout() override;
 
 private:
     // The space between the margins, which clips the label.
-    cutefish::ui::View* m_clip;
-    cutefish::ui::Label* m_label;
+    properdesktop::ui::View* m_clip;
+    properdesktop::ui::Label* m_label;
 };

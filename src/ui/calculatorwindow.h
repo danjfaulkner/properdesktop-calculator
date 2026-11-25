@@ -17,7 +17,7 @@ class ExpressionField;
 class HistoryView;
 class Keypad;
 
-namespace cutefish::ui {
+namespace properdesktop::ui {
 class AboutDialog;
 class Menu;
 struct KeyEvent;
@@ -32,12 +32,12 @@ public:
     static constexpr double ExpressionHeight = 40;
 
     // Fixed: the history's visible rows, the expression and the keypad at the width.
-    static cutefish::ui::SizeF size();
+    static properdesktop::ui::SizeF size();
 
     CalculatorWindow();
     ~CalculatorWindow();
 
-    cutefish::ui::Window& window() { return m_window; }
+    properdesktop::ui::Window& window() { return m_window; }
     Calculator& calculator() { return m_calculator; }
 
     // What a keypad key does to the expression; Keypad::Backspace for the glyph key.
@@ -59,8 +59,8 @@ private:
     class Root;
 
     // A keyboard key holds its keypad key down until it is let go.
-    bool keyPress(const cutefish::ui::KeyEvent& event);
-    bool keyRelease(const cutefish::ui::KeyEvent& event);
+    bool keyPress(const properdesktop::ui::KeyEvent& event);
+    bool keyRelease(const properdesktop::ui::KeyEvent& event);
     void releaseKeys();
     // After the expression or the history changed.
     void update();
@@ -69,11 +69,11 @@ private:
     void retranslate();
 
     Calculator m_calculator;
-    cutefish::ui::Window m_window;
+    properdesktop::ui::Window m_window;
     Root* m_root;
-    std::unique_ptr<cutefish::ui::Menu> m_mainMenu;
-    std::unique_ptr<cutefish::ui::AboutDialog> m_about;
+    std::unique_ptr<properdesktop::ui::Menu> m_mainMenu;
+    std::unique_ptr<properdesktop::ui::AboutDialog> m_about;
     // The keypad keys held down from the keyboard, by the keyboard key.
     std::map<uint64_t, std::string> m_heldKeys;
-    cutefish::base::Subscription m_languageChanged;
+    properdesktop::base::Subscription m_languageChanged;
 };

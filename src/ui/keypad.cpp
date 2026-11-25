@@ -14,7 +14,7 @@
 #include <algorithm>
 #include <cmath>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 static constexpr int kColumns = 4;
 static constexpr int kRows = 5;

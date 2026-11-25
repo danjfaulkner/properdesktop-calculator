@@ -8,7 +8,7 @@
 
 #include <algorithm>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 ExpressionField::ExpressionField()
     : m_clip(addChild<View>())

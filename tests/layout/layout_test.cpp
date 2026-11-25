@@ -18,7 +18,7 @@
 
 #include <cmath>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 static RectF windowRect(const View* view)
 {

@@ -10,7 +10,7 @@
 
 #include <tuple>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 static KeyEvent keyEvent(uint32_t keysym, uint32_t keycode, const std::string& text = {})
 {

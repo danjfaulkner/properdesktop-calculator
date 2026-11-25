@@ -1,6 +1,6 @@
 # Calculator
 
-A simple calculator for Cutefish Desktop, and nothing more: + − × ÷ and
+A simple calculator for Proper Desktop, and nothing more: + − × ÷ and
 percentages on a keypad you can also drive from the keyboard, with the last
 calculations above the one you are typing.
 
@@ -8,7 +8,7 @@ calculations above the one you are typing.
 
 ## Dependencies
 
-Calculator uses cutefish-toolkit; GoogleTest for the tests.
+Calculator uses properdesktop-toolkit; GoogleTest for the tests.
 
 ```sh
 sudo apt install cmake libgtest-dev

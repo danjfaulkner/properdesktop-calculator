@@ -17,7 +17,7 @@
 #include <fstream>
 #include <string>
 
-using namespace cutefish;
+using namespace properdesktop;
 
 int main(int argc, char** argv)
 {

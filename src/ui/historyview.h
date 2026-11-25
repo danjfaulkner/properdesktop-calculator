@@ -12,7 +12,7 @@ class HistoryRows;
 
 // The calculations so far, one a row, right-aligned and dimmed, kept
 // scrolled to the latest.
-class HistoryView : public cutefish::ui::ScrollView
+class HistoryView : public properdesktop::ui::ScrollView
 {
 public:
     // Rows the window keeps in sight above the expression.

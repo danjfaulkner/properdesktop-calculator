@@ -25,5 +25,5 @@ public:
         driver.layout();
     }
 
-    cutefish::ui::TestDriver driver{m_window.window(), [](const std::string& message) { ADD_FAILURE() << message; }};
+    properdesktop::ui::TestDriver driver{m_window.window(), [](const std::string& message) { ADD_FAILURE() << message; }};
 };

@@ -11,13 +11,13 @@
 #include <string>
 #include <vector>
 
-namespace cutefish::ui {
+namespace properdesktop::ui {
 class Icon;
 class Label;
 }
 
 // A key of the keypad: a round plate as large as the key, with a label or a glyph.
-class KeypadButton : public cutefish::ui::View
+class KeypadButton : public properdesktop::ui::View
 {
 public:
     enum class Kind {
@@ -42,16 +42,16 @@ public:
 
 protected:
     void layout() override;
-    void paint(cutefish::ui::Painter& painter) override;
+    void paint(properdesktop::ui::Painter& painter) override;
     void pointerEnter() override;
     void pointerLeave() override;
-    void pointerPress(const cutefish::ui::PointerEvent& event) override;
-    void pointerRelease(const cutefish::ui::PointerEvent& event) override;
+    void pointerPress(const properdesktop::ui::PointerEvent& event) override;
+    void pointerRelease(const properdesktop::ui::PointerEvent& event) override;
 
 private:
     Kind m_kind;
-    cutefish::ui::Label* m_label = nullptr;
-    cutefish::ui::Icon* m_icon = nullptr;
+    properdesktop::ui::Label* m_label = nullptr;
+    properdesktop::ui::Icon* m_icon = nullptr;
     // The glyph's size as a share of the key's.
     double m_glyphScale = 0.29;
     bool m_hovered = false;
@@ -61,7 +61,7 @@ private:
 
 // The standard keypad: four columns and five rows of round keys, as large as
 // the width or the height allows, centred.
-class Keypad : public cutefish::ui::View
+class Keypad : public properdesktop::ui::View
 {
 public:
     // What the keys send: the digits and operators as they read, Clear for
@@ -81,7 +81,7 @@ public:
 
 protected:
     void layout() override;
-    void paint(cutefish::ui::Painter& painter) override;
+    void paint(properdesktop::ui::Painter& painter) override;
 
 private:
     std::vector<KeypadButton*> m_buttons;

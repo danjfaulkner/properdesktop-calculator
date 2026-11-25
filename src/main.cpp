@@ -11,7 +11,7 @@
 #include <cstdio>
 #include <string>
 
-using namespace cutefish;
+using namespace properdesktop;
 
 static int parseArguments(int argc, char** argv, bool* quit)
 {
@@ -19,7 +19,7 @@ static int parseArguments(int argc, char** argv, bool* quit)
     for (int i = 1; i < argc; ++i) {
         const std::string argument = argv[i];
         if (argument == "-h" || argument == "--help" || argument == "-?") {
-            std::printf("Usage: %s [options]\nCutefish Calculator\n\nOptions:\n"
+            std::printf("Usage: %s [options]\nProperDesktop Calculator\n\nOptions:\n"
                         "  -h, --help     Displays help on commandline options.\n"
                         "  -v, --version  Displays version information.\n",
                         argv[0]);
@@ -27,7 +27,7 @@ static int parseArguments(int argc, char** argv, bool* quit)
             return 0;
         }
         if (argument == "-v" || argument == "--version") {
-            std::printf("cutefish-calculator %s\n", CALCULATOR_VERSION);
+            std::printf("properdesktop-calculator %s\n", CALCULATOR_VERSION);
             *quit = true;
             return 0;
         }
@@ -46,8 +46,8 @@ int main(int argc, char** argv)
         return status;
 
     ui::Application app(argc, argv);
-    app.setApplicationId("cutefish-calculator");
-    i18n::setDomain("cutefish-calculator");
+    app.setApplicationId("properdesktop-calculator");
+    i18n::setDomain("properdesktop-calculator");
     for (const auto& [name, svg] : embeddedIcons())
         ui::Icon::registerGlyph(std::string(name), std::string(svg));
 

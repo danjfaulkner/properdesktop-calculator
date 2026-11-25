@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: cutefish-calculator\n"
-"Report-Msgid-Bugs-To: https://github.com/cutefishos\n"
+"Project-Id-Version: properdesktop-calculator\n"
+"Report-Msgid-Bugs-To: https://github.com/danjfaulkner\n"
 "POT-Creation-Date: 2026-11-06 21:53+0800\n"
 "PO-Revision-Date: 2026-11-06 21:53+0800\n"
 "Last-Translator: \n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: src/ui/calculatorwindow.cpp cutefish-calculator.desktop
+#: src/ui/calculatorwindow.cpp properdesktop-calculator.desktop
 msgid "Calculator"
 msgstr "Kalkulator"
 
@@ -56,10 +56,10 @@ msgstr "Minimalizuj"
 msgid "A simple calculator"
 msgstr "Prosty kalkulator"
 
-#: cutefish-calculator.desktop
+#: properdesktop-calculator.desktop
 msgid "Perform calculations"
 msgstr "Wykonuj obliczenia"
 
-#: cutefish-calculator.desktop
+#: properdesktop-calculator.desktop
 msgid "Math;Arithmetic;"
 msgstr "Matematyka;Arytmetyka;Liczenie;Kalkulator;Math;"

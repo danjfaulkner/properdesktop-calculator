@@ -11,7 +11,7 @@
 // for each theme.
 enum class CalculatorColor : uint16_t {
     // Translucent over the window's blur.
-    WindowBackground = uint16_t(cutefish::ui::ColorId::ApplicationFirst),
+    WindowBackground = uint16_t(properdesktop::ui::ColorId::ApplicationFirst),
     // The digit keys.
     Key,
     // The edge lit at the top and the bottom of a key.
@@ -36,8 +36,8 @@ enum class CalculatorColor : uint16_t {
     AccentKeyShadow,
 };
 
-void addCalculatorColors(cutefish::ui::ColorMixer& mixer, const cutefish::ui::Theme& theme);
+void addCalculatorColors(properdesktop::ui::ColorMixer& mixer, const properdesktop::ui::Theme& theme);
 
 // Added before main by every program that names one of the colours.
 [[maybe_unused]] inline const bool calculatorColorsAdded =
-    (cutefish::ui::ColorProvider::addMixer(addCalculatorColors), true);
+    (properdesktop::ui::ColorProvider::addMixer(addCalculatorColors), true);

@@ -2,7 +2,7 @@
 Version=1.0
 Name=Calculator
 Comment=Perform calculations
-Exec=cutefish-calculator
+Exec=properdesktop-calculator
 Icon=accessories-calculator
 Terminal=false
 Type=Application

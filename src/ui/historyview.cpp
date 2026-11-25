@@ -8,7 +8,7 @@
 
 #include <algorithm>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 // The rows: each its text with the large spacing above and below it;
 // together at the bottom, next to the expression.

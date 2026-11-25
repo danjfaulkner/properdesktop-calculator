@@ -10,7 +10,7 @@
 
 #include <gtest/gtest.h>
 
-using namespace cutefish::ui;
+using namespace properdesktop::ui;
 
 static std::string clipboardText()
 {
